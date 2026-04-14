@@ -5,20 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
-
-
+    
 <p id="izvade"></p>
-<h1> Mācību Plānotājs</h1>
-<h2> Pievienot uzdevumu</h2>
+<h1>Mācību plānotājs</h1>
 
-<p>Priekšmets:</p>
-<p>Datums:</p>
-<p>Uzdevums:</p>
+<h2>Pievienot uzdevumu</h2>
+<div class="forma">
+    <p>Priekšmets:
+        <input type="text" id="Priekšmets" >
+    </p>
+    <p>Datums:
+        <input type="date" id="Datums" >
+    </p>
+
+    <p>Uzdevums:
+        <input type="text" id="Uzdevums" >
+    </p>
+    <button onclick="pievienot()">Pievienot</button>
+</div>
+ 
+<hr>
+<h2>Uzdevumu saraksts:</h2>
+<ul id="saraksts"></ul>
+<button onclick="dzest()">Dzēst atķeksētos</button>
+<br><br>
+<a href="kopsavilkums.html">kopsavilkums</a>
 
 
 
-    <script src="script.js"></script> 
+<script src="script.js"></script>
 </body>
 </html>
