@@ -4,13 +4,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+<style>
+    body{
+        background-color: pink;
+        text-align: center;
+    }
+    h1{
+        text-align: center;
+    }
+    input{
+         margin-left: 10px;
+         text-align: center;
+    }
+button{
+    background-color: hotpink;
+    color: white;
+    border: none;
+    text-align: center;
+}
+li{
+    background-color: white;
+    text-align: center;
+}
+ul{
+    padding: 10px;
+    text-align: center;
+}
+</style>
+
+
 </head>
 <body>
-    <h1>Kopsavilkums</h1>
-    <ul id="Kopsavilkums"></ul>
-    <br>
-    <a href="index.html">Atpakaļ</a>
-    <script src="Kopsavilkums.html"></script>
+<h1>Kopsavilkums</h1>
+<ul id="Kopsavilkums"></ul>
+
+<p>
+    Meklēšana:
+<input type="text" id="meklesana" placeholder="Meklēt..." onkeyup="meklet()">
+</p>
     
+
+
+
+
+
+
+
+
+
+
+
+
+<hr>
+<h2>Spēle</h2>
+<p>Ievadi skatli no 1 līdz 20</p>
+<input type="number" id="skaitlis">
+<button onclick="minet()">Minēt</button>
+
+<p id="rezultats"></p>
+<br>
+<a href="index.html">Atpakaļ</a>
+<script src="script.js"></script>
+
+
+
+
+
 </body>
 </html>
