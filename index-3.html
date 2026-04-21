@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+<style>
+    
+body{
+    background-color: pink;
+    text-align: center;
+}
+h1{
+    text-align: center;
+}
+p{
+
+    text-align: center;
+}
+input{
+    margin-left: 10px;
+}
+button{
+    margin-top: 10px;
+    background-color: hotpink;
+    color: white;
+    border: none;
+}
+li{
+    background-color: white;
+}
+ul{
+    padding: 10px;
+}
+</style>
+
+
+
+</head>
+<body>
+    
+<p id="izvade"></p>
+<h1>Mācību plānotājs</h1>
+<p>Sveiks skolēn! Tu esi nonācis mācību plānotāja lapā, kas Tev palīdzēs saplānot savus mācību un ikdienas plānus. Viss ir ļoti vienkārši, Tu ievadi priekšmetu, datumu un uzdevumu. Kad esi izpildijis ieplānoto, uzdevumu sarakstu vari rediģēt ar vienas pogas klikšķi. Kad esi izpildijis ieplānoto dodies uz " Ej uz spēli " un atpūties no padarītā. Veidosim savu ikdienu saplānoti ar Mācību plānotāju.</p>
+
+<h2>Pievienot uzdevumu</h2>
+<div class="forma">
+    <p>Priekšmets:
+        <input id="Priekšmets" placeholder="Priekšmets">
+      </p>
+    <p>Datums:
+        <input id="Datums" type="date" >
+    </p>
+
+    <p>Uzdevums:
+        <input id="Uzdevums" placeholder="Uzdevums">
+    </p>
+    <button onclick="pievienot()">Pievienot</button>
+</div>
+ 
+<hr>
+<h2>Uzdevumu saraksts:</h2>
+
+<ul id="saraksts"></ul>
+
+<br><br>
+<a href="Kopsavilkums.html">Ej uz spēli!</a>
+
+
+
+<script src="script.js"></script>
+</body>
+</html>
